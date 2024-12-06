@@ -1,0 +1,61 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Fond sombre */
+    color: #d4d4d4; /* Texte clair */
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête */
+header {
+    background-color: #007acc; /* Bleu vif */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff; /* Blanc */
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #333333; /* Gris foncé */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #d4d4d4; /* Texte clair */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #007acc; /* Bleu vif au survol */
+}
+
+/* Section principale */
+main {
+    padding: 20px;
+}
+
+main h2 {
+    color: #007acc; /* Bleu vif */
+}
+
+main p {
+    line-height: 1.6;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333333; /* Gris foncé */
+    color: #d4d4d4; /* Texte clair */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
