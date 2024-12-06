@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body class="align-column">
+    <header>
+        <h1>Bienvenue sur mon Portfolio</h1>
+    </header>
+    <nav>
+        <a href="about.html">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <h2>Contactez-moi</h2>
+        <form action="php/send_mail.php" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        <section id="linkedin">
+            <a target="_blank" href="https://www.linkedin.com/in/jer0me-hertzog01/" alt="Mon profil LinkedIn">
+                Mon profil LinkedIn
+            </a>
+        </section>
+        <section id="contact">
+            <h2>Contactez-moi</h2>
+            <p>Vous pouvez me joindre à l'adresse email suivante : <a href="mailto:jerome.hertzog00@outlook.fr">Mon email professionnel</a></p>
+            <p>Mais aussi par téléphone (appels professionnels uniquement) : +33 6 52 91 62 35</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mon Portfolio - Jérôme Hertzog. Tous droits réservés.</p>
+        <nav>
+            <a target="_blank" href="https://www.linkedin.com/in/jer0me-hertzog01/" alt="Mon profil LinkedIn">
+                <img src="images/linkedin-logo.png" alt="Mon profil LinkedIn"/>
+            </a>
+            <a target="_blank" href="cv/CV_HERTZOG_Jerome.pdf" alt="Mon CV">
+                <img src="images/cv-document-image.png" alt="Mon CV"/>
+            </a>
+            <a target="_blank" href="https://github.com/jeromehtz" alt="Mon profil GitHub">
+                <img src="images/logo-github.png" alt="Mon profil GitHub"/>
+            </a>
+        </nav>
+    </footer>
+    <script src="script/scriptjs.js"></script>
+</body>
+</html>
