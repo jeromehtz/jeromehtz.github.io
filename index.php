@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +11,14 @@
         <h1>Bienvenue sur mon Portfolio</h1>
     </header>
     <nav>
-        <a href="#about">À propos</a>
+        <a href="about.html">À propos</a>
         <a href="#projects">Projets</a>
         <a href="#contact">Contact</a>
     </nav>
     <main>
         <section id="about">
             <h2>À propos de moi</h2>
-            <p>Je suis un développeur passionné par les nouvelles technologies et l'innovation.</p>
+            <p>Je suis un développeur passionné par les nouvelles technologies tout ce qui a un rapport étroit avec le monde de l'informatique.</p>
         </section>
         <section id="projects">
             <h2>Mes Projets</h2>
@@ -26,11 +26,9 @@
         </section>
         <section id="contact">
             <h2>Contactez-moi</h2>
-            <p>Vous pouvez me joindre à l'adresse email suivante : <a href="mailto:votre.email@example.com">votre.email@example.com</a></p>
+            <p>Vous pouvez me joindre à l'adresse email suivante : <a href="mailto:jerome.hertzog00@outlook.fr">votre.email@example.com</a></p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Mon Portfolio - jérôme Hertzog. Tous droits réservés.</p>
-    </footer>
+    <?php include("footer.php"); ?>
 </body>
 </html>
