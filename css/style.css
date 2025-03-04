@@ -1,41 +1,58 @@
 /* Styles de base */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e2e2e2; /* Fond sombre */
-    color: #d4d4d4; /* Texte clair */
+    background-color: #121212; /* Fond sombre */
+    color: #E0E0E0; /* Texte clair */
     margin: 0;
     padding: 0;
-    color: #00416d;
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Empêche le scroll horizontal */
+}
+
+.content {
+    flex-grow: 1; /* Permet au contenu de pousser le footer en bas */
+    padding: 20px;
 }
 
 /* En-tête */
 header {
-    background-color: #00416d; /* Bleu vif */
+    background-color: #1F1B24; /* Gris foncé */
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    color: #ffffff; /* Blanc */
+    color: #BB86FC; /* Violet vif */
     margin: 0;
 }
 
 /* Navigation */
 nav {
-    background-color: #333333; /* Gris foncé */
+    background-color: #2C2C2C; /* Gris plus foncé */
     padding: 10px;
     text-align: center;
 }
 
 nav a {
-    color: #d4d4d4; /* Texte clair */
+    color: #E0E0E0; /* Texte clair */
     margin: 0 15px;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #007acc; /* Bleu vif au survol */
+    color: #03DAC6; /* Teal vif au survol */
+}
+
+a {
+    text-decoration: none;
+    color: #4b77a3;
+}
+
+a:hover{
+    color: #03DAC6;
 }
 
 /* Section principale */
@@ -56,15 +73,22 @@ main p {
 }
 
 /* Pied de page */
-footer {
-    background-color: #333333; /* Gris foncé */
-    color: #d4d4d4; /* Texte clair */
-    padding: 10px;
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    
+    background: #1F1B24;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
-
+.footer.visible {
+    opacity: 1;
+}
 
 img {
     width: 3rem;
@@ -72,22 +96,11 @@ img {
 
 main img {
     width: 25%;
-
-}
-
-footer {
-    text-align: center;
-    position: absolute;
-    position: fixed;
-    bottom: 0;
-    margin-top: 10px;
 }
 
 .hidden {
     display: none;
 }
-
-
 
 .align-row {
     display: flex;
@@ -128,13 +141,4 @@ footer {
     .absolute {
         text-align: center;
     }
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #e2e2e2; /* Fond sombre */
-        color: #d4d4d4; /* Texte clair */
-        margin: 0;
-        padding: 0;
-        color: #00416d;
-        font-size: 1rem;
-    }
-}
+

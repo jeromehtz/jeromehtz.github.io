@@ -1,23 +1,24 @@
-const footer = document.querySelector(".footer")
-const footer_body = document.querySelector("footer")
+function adjustFooter() {
+    let footer = document.querySelector(".footer");
+    let contentHeight = document.body.scrollHeight; // Hauteur totale du document
+    let windowHeight = window.innerHeight; // Hauteur de la fenêtre visible
+    let scrollPosition = window.scrollY + windowHeight; // Position actuelle du scroll
 
-footer.addEventListener("click", function () {
-    if (footer_body.classList.contains("hidden"))
-    {
-        footer_body.classList.remove("hidden")
+    // Affiche le footer seulement quand on atteint le bas
+    if (scrollPosition >= contentHeight - 10) {
+        footer.classList.add("visible");
+    } else {
+        footer.classList.remove("visible");
     }
-    else if (!footer_body.classList.contains("hidden"))
-    {
-        footer_body.classList.add("hidden")
+
+    // Empêche le scroll inutile si le contenu est plus petit que l'écran
+    if (contentHeight < windowHeight) {
+        document.body.style.overflowY = "hidden";
+    } else {
+        document.body.style.overflowY = "auto";
     }
-    // setTimeout(footer_body.classList.add("hidden"), 5000)
-    
+}
 
-})
-
-// footer_body.addEventListener("click", function () {
-//     if (!footer_body.classList.contains("hidden"))
-//     {
-//         footer_body.classList.add("hidden")
-//     }
-// })
+window.addEventListener("scroll", adjustFooter);
+window.addEventListener("resize", adjustFooter);
+document.addEventListener("DOMContentLoaded", adjustFooter);
