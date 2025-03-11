@@ -22,3 +22,38 @@ function adjustFooter() {
 window.addEventListener("scroll", adjustFooter);
 window.addEventListener("resize", adjustFooter);
 document.addEventListener("DOMContentLoaded", adjustFooter);
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    var emailPattern = /^(([^<>()[]\.,;:s@]+(.[^<>()[]\.,;:s@]+)*)|(.+))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
+
+    if (!emailPattern.test(email.value)) {
+        document.getElementById('responseMessage').innerText = 'Veuillez entrer une adresse email valide.';
+        return;
+    }
+
+    fetch('https://formspree.io/f/xqapzdyj', {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            document.getElementById('responseMessage').innerText = 'Votre message a été envoyé avec succès!';
+            this.reset();
+        } else {
+            document.getElementById('responseMessage').innerText = 'Une erreur est survenue. Veuillez réessayer.';
+        }
+    }).catch(error => {
+        document.getElementById('responseMessage').innerText = 'Une erreur est survenue. Veuillez réessayer.';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+});

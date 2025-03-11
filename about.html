@@ -6,46 +6,85 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
-        <title>Document</title>
+        <title>Mon parcours</title>
+        <link rel="icon" type="image/png" href="images/briefcase_14255519.png">
     </head>
     <body class="align-column content">
         <header>
-            <h1>Bienvenue sur mon Portfolio</h1>
+            <h1>Mon parcours</h1>
         </header>
-        <nav>
-            <a href="index.html">Page d'accueil</a>
-            <a href="#projets">Projets</a>
-            <a href="contact.html">Contact</a>
+        <nav class="nav">
+            <span data-bs-toggle="popover" data-bs-content="Retour à la page d'accueil">
+                <a href="index.html">Page d'accueil</a>
+            </span>
+            <span data-bs-toggle="popover" data-bs-content="En savoir plus sur moi">
+                <a href="about.html">Dipl&ocirc;mes et formations</a>
+            </span>
+            <span data-bs-toggle="popover" data-bs-content="Voir mes projets">
+                <a href="projects.html">Projets</a>
+            </span>
+            <span data-bs-toggle="popover" data-bs-content="Voir mes projets">
+                <a href="stages.html">Exp&eacute;riences en entreprises</a>
+            </span>
+            <span data-bs-toggle="popover" data-bs-content="Me contacter">
+                <a href="contact.html">Contact</a>
+            </span>
+            <span>
+                <a target="_blank" href="https://www.linkedin.com/in/jer0me-hertzog01/" alt="Mon profil LinkedIn" data-bs-toggle="popover" data-bs-content="Voir mon profil LinkedIn">
+                    <img src="images/linkedin-logo.png" alt="Mon profil LinkedIn" />
+                </a>
+                <a target="_blank" href="cv/CV_HERTZOG_Jerome.pdf" alt="Mon CV" data-bs-toggle="popover" data-bs-content="Voir mon CV">
+                    <img src="images/cv-document-image.png" alt="Mon CV" />
+                </a>
+                <a target="_blank" href="https://github.com/jeromehtz" alt="Mon profil GitHub" data-bs-toggle="popover" data-bs-content="Voir mon profil GitHub">
+                    <img src="images/logo-github.png" alt="Mon profil GitHub" />
+                </a>
+            </span>
         </nav>
         <main>
-            <div class="align-column align-center">
-                <span> Je suis étudiant en deuxième année de socle numérique à l'EPSI. 
-                <br/> Et je prépare actuellement mon diplôme du BTS SIO.
-                </span>
-                <span>
-                    Mes centres d'intérêt : Jeux vidéo, anime et manga, nature, sport
-                </span><br/><br/>
+            <center>
+                <div class="align-row space-around-center">
+                    <div id="test" class="align-column">
+                        <span><img class="formation" src="images/epsi_logo.png" alt="logo epsi" /></span>
+                        <p>
+                            Formation : Bachelor informatique<br />
+                            Septembre 2023 - en cours<br />
+                            7 Rue Jean-Marie Leclair, 69009 Lyon <br />
+                            <span style="font-weight: bold;">
+                                J'ai actuellement pour objectif de préparer un diplôme de bachelor informatique spécialisé en développement et intelligence artificielle.
+                            </span>
+                        </p>
 
-                <h2 class="">Ma formation</h2>
-                <div id="test" class="align-row space-around-center about-school-fontsize">
-                    <img src="images/epsi_logo.png" alt="logo epsi"/>
+                    </div>
+                    <div id="test" class="align-column">
+                        <span><img src="images/epita_logo.png" alt="logo epsi" /></span>
+                        <div class="align-center">
+                            Formation : Cycle préparatoire<br />
+                            Septembre 2021 - Juillet 2023<br />
+                            14-16 Rue Voltaire, 94270<br />
+                            Le Kremlin-Bicêtre
+                        </div>
+                    </div>
+
+                </div> <br />
+                <hr /> <br />
+
+                <div class="align-column">
+                    <div><img src="images/stsulp.jpg" alt="Collège et lycée Saint-Sulpice - Paris 6" /></div>
                     <div>
-                        Formation : Socle numérique<br/>
-                        Septembre 2023 - en cours<br/>
-                        7 Rue Jean-Marie Leclair, 69009 Lyon
+                        <span style="font-weight: bold;">
+                            Baccalauréat - Filière générale - 2021 <br />
+                        </span>
+                        Options : Maths - Numérique et sciences de l'informatique <br />
+                        Lycée Saint-Sulpice - 68 rue d'Assas, 75006 Paris
                     </div>
-                </div><br/><br/>
-                <div id="test" class="align-row space-around-center about-school-fontsize">
-                    <img src="images/epita_logo.png" alt="logo epsi"/>
-                    <div class="align-center">
-                        Formation : Cycle préparatoire<br/>
-                        Septembre 2021 - Juillet 2023<br/>
-                        14-16 Rue Voltaire, 94270<br/>
-                        Le Kremlin-Bicêtre
-                    </div>
-                </div>
 
-            </div>
+                </div>
+            </center>
+
+            
+            
+
         </main>
     </body>
     <iframe src="footer.html" width="100%" height="500px" style="border: none;"></iframe>
