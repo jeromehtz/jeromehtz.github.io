@@ -1,7 +1,7 @@
 /* Styles de base */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Fond sombre */
+    background-color: #5e76ff; /* Fond sombre */
     color: #E0E0E0; /* Texte clair */
     margin: 0;
     padding: 0;
@@ -10,6 +10,12 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden; /* Empêche le scroll horizontal */
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
 }
 
 .content {
@@ -21,7 +27,7 @@ body {
 header {
     background-color: #1F1B24; /* Gris foncé */
     padding: 20px;
-    text-align: center;
+    justify-content: flex-end;
 }
 
 header h1 {
@@ -31,11 +37,13 @@ header h1 {
 
 /* Navigation */
 .nav {
-    background-color: #2C2C2C; /* Gris plus foncé */
     padding: 10px;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.nav:hover {
+    opacity: 1;
 }
 
 .nav a {
@@ -50,7 +58,7 @@ nav a:hover {
 
 a {
     text-decoration: none;
-    color: #4b77a3;
+    color: #97b1f2;
 }
 
 a:hover{
@@ -83,13 +91,13 @@ main p {
     position: fixed;
     bottom: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    background: #1F1B24;
+    background: #4662ff;
     color: #E0E0E0;
-    text-align: center;
     padding: 15px;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
 }
 
 .footer.visible {
@@ -154,6 +162,15 @@ main img {
     
 }
 
+[popover] {
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pour s'assurer qu'il reste au-dessus du contenu */
+    padding: 10px 20px; /* Ajuste selon ton besoin */
+    background: #4662ff;
+    border: none;
+}
+
 @media (max-width: 768px) {
     .align-row {
         display: flex;
@@ -177,8 +194,8 @@ main img {
 
     nav {
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        font-size: 0.1rem;
     }
 }
 

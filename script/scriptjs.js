@@ -1,3 +1,21 @@
+const menu = document.getElementById("menu");
+console.log(menu);
+const menu_nav = document.querySelector(".nav");
+console.log(menu_nav)
+
+if (menu && menu_nav) { 
+    console.log("Menu and nav exist");
+    menu.addEventListener("click", () => {
+        menu_nav.classList.toggle("hidden");
+    });
+
+    menu_nav.addEventListener("click", () => {
+        menu_nav.classList.toggle("hidden");
+    });
+
+
+}
+
 function adjustFooter() {
     let footer = document.querySelector(".footer");
     let contentHeight = document.body.scrollHeight; // Hauteur totale du document
