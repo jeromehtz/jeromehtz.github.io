@@ -18,14 +18,17 @@ body {
     position: fixed;
 }
 
+#contact {
+    display: flex; justify-content: flex-end;
+}
+
 .content {
     flex-grow: 1; /* Permet au contenu de pousser le footer en bas */
-    padding: 20px;
 }
 
 /* En-tête */
 header {
-    background-color: #1F1B24; /* Gris foncé */
+    background-color: #F5F5F5; /* Gris foncé */
     padding: 20px;
     justify-content: flex-end;
 }
@@ -92,9 +95,12 @@ main p {
     bottom: 0;
     left: 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    background-color: rgb(21, 21, 21);
+    z-index: 1000; /* Pour s'assurer qu'il reste au-dessus du contenu */
+    padding: 10px 20px; /* Ajuste selon ton besoin */
+    background: rgb(21, 21, 21);
     color: #E0E0E0;
     padding: 15px;
     opacity: 0;
@@ -173,6 +179,10 @@ main img {
 
 .stage {
     font-size: 1.5rem;
+}
+
+iframe {
+    width: 100%;
 }
 
 @media (max-width: 768px) {
