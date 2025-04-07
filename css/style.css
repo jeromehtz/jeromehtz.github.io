@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: flex-end;
     position: fixed;
+    width: 4rem;
 }
 
 #contact {
@@ -111,6 +112,10 @@ main p {
 }
 
 img {
+    width: 3rem;
+}
+
+.img_content {
     width: 3rem;
 }
 
