@@ -12,12 +12,15 @@ body {
     overflow-x: hidden; /* Empêche le scroll horizontal */
 }
 
-.menu {
+.menu-container {
     display: flex;
     justify-content: flex-end;
-    position: fixed;
-    width: 4rem;
 }
+
+img.menu {
+    width: 3rem;
+}
+
 
 #contact {
     display: flex; justify-content: flex-end;
@@ -27,12 +30,41 @@ body {
     flex-grow: 1; /* Permet au contenu de pousser le footer en bas */
 }
 
-/* En-tête */
-header {
-    background-color: #F5F5F5; /* Gris foncé */
-    padding: 20px;
-    justify-content: flex-end;
+
+
+/* Pour éviter les surprises */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Rend le conteneur fixe */
+.position-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F5F5F5;
+    z-index: 999;
+}
+
+/* Aligne les deux h1 sur la même ligne, aux extrémités */
+.header {
+    background-color: #F5F5F5; /* Gris foncé */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+    box-shadow: 1px 1px 5px 2px rgba(102,90,90,0.75);
+    -webkit-box-shadow: 1px 1px 5px 2px rgba(102,90,90,0.75);
+    -moz-box-shadow: 1px 1px 5px 2px rgba(102,90,90,0.75);
+}
+
+
+/* Pour que le contenu en dessous ne passe pas sous l'en-tête */
+
 
 header h1 {
     color: #BB86FC; /* Violet vif */
@@ -71,7 +103,9 @@ a:hover{
 
 /* Section principale */
 main {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px; /* hauteur de l'en-tête + marge */
 }
 
 h2 {
@@ -139,6 +173,8 @@ main img {
     display: flex;
     flex-direction: column;
 }
+
+
 
 .space-around-center {
     display: flex;
