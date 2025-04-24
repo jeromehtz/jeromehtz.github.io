@@ -178,7 +178,7 @@ main img {
 
 .space-around-center {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -206,7 +206,7 @@ main img {
 
 .center {
     display: flex;
-    
+    justify-content: center;
 }
 
 [popover] {
@@ -231,6 +231,11 @@ iframe {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .align-column {
+        display: flex;
+        flex-direction: column;
     }
 
     footer {

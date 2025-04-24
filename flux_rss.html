@@ -135,6 +135,24 @@
             </div>
             <ul class="list-group list-group-flush" id="theverge-feed"></ul>
         </div>
+
+        <br/><h2>Economie</h2>
+        
+        <div class="card mt-4">
+            <div class="card-header">
+                <h2>Le Monde</h2>
+            </div>
+            <ul class="list-group list-group-flush" id="ecolemonde-feed"></ul>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">
+                <h2>BFM Business</h2>
+            </div>
+            <ul class="list-group list-group-flush" id="ecobfm-feed"></ul>
+        </div>
+        
+        
     </div>
 
     <script>
@@ -174,7 +192,9 @@
 
         getRssFeed('https://www.theverge.com/rss/index.xml', 'theverge-feed');
 
-        /*getRssFeed('https://www.dalloz-actualite.fr/rss.xml', 'dalloz-feed');*/
+        getRssFeed('https://www.lemonde.fr/economie/rss_full.xml', 'ecolemonde-feed');
+
+        getRssFeed('https://www.bfmtv.com/rss/economie/', 'ecobfm-feed');
     </script>
 </main>
 </body>
