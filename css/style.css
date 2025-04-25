@@ -179,7 +179,14 @@ main img {
 .space-around-center {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.marge-gauche {
+    margin-left: 50px; max-width: 800px;
 }
 
 .about-school-fontsize {
@@ -232,6 +239,10 @@ iframe {
         flex-direction: column;
         justify-content: center;
     }
+
+    .justify {
+        text-align: start;
+    }    
 
     .align-column {
         display: flex;
