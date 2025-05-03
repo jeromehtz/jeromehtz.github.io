@@ -13,10 +13,16 @@
 <body class="align-column content">
     <div class="position-fixed">
         <header class="header">
-    
-            <div id="menu">
-                <img class="menu" id="menu" src="images/menu.png" alt="Menu"/>
+            <div class="display-flex">
+                <div id="menu">
+                    <img class="menu" id="menu" src="images/menu.png" alt="Menu"/>
+
+                </div>
+                <div id="navigation">
+                    <img class="navigation" id="navigation" src="images/nav.png" alt="Navigation"/>
+                </div>
             </div>
+            
             <div>
                 <nav id="contact">
                     <a href="flux_rss.html" alt="Flux RSS">
@@ -59,8 +65,16 @@
         <a href="flux_rss.html">Actualités</a>
     </span>
 </nav>
+
 <main class="fluxrss justify">
     <div class="container">
+        <nav class="nav color-dark-gray navigation_nav hidden" popover>
+            <a href="#dernières-actualités">Dernières actualités</a>
+            <a href="#juridique">Juridique</a>
+            <a href="#technologie">Technologie</a>
+            <a href="#economie">Economie</a>
+            <a href="#environnement">Environnement</a>
+        </nav>
         <h1 class="mt-4">Dernières actualités</h1>
 
         <!-- Le Monde Flux -->
@@ -71,7 +85,7 @@
             <ul class="list-group list-group-flush" id="le-monde-feed"></ul>
         </div>
 
-        <br/><h2>Juridique (France & International)</h2>
+        <br/><h2 id="juridique">Juridique (France & International)</h2>
         <!-- Dalloz Actualité Flux -->
         <div class="card mt-4">
             <div class="card-header">
@@ -102,7 +116,7 @@
             <ul class="list-group list-group-flush" id="droit-technologie-feed"></ul>
         </div>
 
-        <br/><h2>Technologie</h2>
+        <br/><h2 id="technologie">Technologie</h2>
 
         <br/><h2>France</h2>
 
@@ -136,7 +150,7 @@
             <ul class="list-group list-group-flush" id="theverge-feed"></ul>
         </div>
 
-        <br/><h2>Economie</h2>
+        <br/><h2 id="economie">Economie</h2>
         
         <div class="card mt-4">
             <div class="card-header">
@@ -152,7 +166,7 @@
             <ul class="list-group list-group-flush" id="ecobfm-feed"></ul>
         </div>
 
-        <br/><h2>Environnement</h2>
+        <br/><h2 id="environnement">Environnement</h2>
         <div class="card mt-4">
             <div class="card-header">
                 <h2>Notre-planet.info</h2>

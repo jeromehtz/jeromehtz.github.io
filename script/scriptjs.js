@@ -3,6 +3,9 @@ console.log(menu);
 const menu_nav = document.querySelector(".nav");
 console.log(menu_nav)
 
+const navigation = document.querySelector(".navigation");
+const navigation_nav = document.querySelector(".navigation_nav");
+
 if (menu && menu_nav) { 
     console.log("Menu and nav exist");
     menu.addEventListener("click", () => {
@@ -11,6 +14,19 @@ if (menu && menu_nav) {
 
     menu_nav.addEventListener("click", () => {
         menu_nav.classList.toggle("hidden");
+    });
+
+
+}
+
+if (navigation && navigation_nav) {
+    console.log("Menu and nav exist");
+    navigation.addEventListener("click", () => {
+        navigation_nav.classList.toggle("hidden");
+    });
+
+    navigation_nav.addEventListener("click", () => {
+        navigation_nav.classList.toggle("hidden");
     });
 
 

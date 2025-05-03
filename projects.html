@@ -12,9 +12,14 @@
 <body class="align-column content">
     <div class="position-fixed">
         <header class="header">
-    
-            <div id="menu">
-                <img class="menu" id="menu" src="images/menu.png" alt="Menu"/>
+
+            <div class="display-flex">
+                <div id="menu">
+                    <img class="menu" id="menu" src="images/menu.png" alt="Menu"/>
+                </div>
+                <div id="navigation">
+                    <img class="navigation" id="navigation" src="images/nav.png" alt="Navigation"/>
+                </div>
             </div>
             <div>
                 <nav id="contact">
@@ -59,12 +64,13 @@
         </span>
     </nav>
     <main class="container projects">
-        <nav class="stage align-column">
+
+        <nav class="nav color-dark-gray navigation_nav hidden" popover>
             <a href="#pokemon">Combats de Pokémon avec Python</a>
-            <a href="#afit">AFIT avec OCaml</a> <br />
+            <a href="#afit">AFIT avec OCaml</a>
             <a href="#project">Pokédex Pokémon avec vuejs</a>
         </nav>
-        <br /><hr /><br />
+        
         <section class="_project" id="pokemon">
             <h2><img style="width: 3rem;"src="images/python.png" alt="Logo Python" /> Python et Pokémon</h2>
             <div class="justify">

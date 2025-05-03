@@ -83,7 +83,7 @@ header h1 {
 }
 
 .nav a {
-    color: #E0E0E0; /* Texte clair */
+    color: gray; /* Texte clair */
     margin: 0 15px;
     text-decoration: none;
 }
@@ -223,6 +223,14 @@ main img {
     padding: 10px 20px; /* Ajuste selon ton besoin */
     background: rgb(21, 21, 21);
     border: none;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.color-dark-gray {
+    color: black;
 }
 
 .stage {

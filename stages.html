@@ -12,9 +12,15 @@
 <body class="align-column content">
     <div class="position-fixed">
         <header class="header">
-    
-            <div id="menu">
-                <img class="menu" id="menu" src="images/menu.png" alt="Menu"/>
+
+            <div class="display-flex">
+                <div id="menu">
+                    <img class="menu" id="menu" src="images/menu.png" alt="Menu"/>
+
+                </div>
+                <div id="navigation">
+                    <img class="navigation" id="navigation" src="images/nav.png" alt="Navigation"/>
+                </div>
             </div>
             <div>
                 <nav id="contact">
@@ -59,11 +65,16 @@
         </span>
     </nav>
     <main class="container projects">
-        <nav class="stage align-column">
+        <!--<nav class="nav navigation_nav stage align-row hidden" popover>
             <a href="#sm">Mon stage &agrave; Square Management</a>
-            <a href="#ca">Mon stage au Cr&eacute;dit Agricole Technologies et Services</a> <br />
+            <a href="#ca">Mon stage au Cr&eacute;dit Agricole Technologies et Services</a>
+        </nav>-->
+
+        <nav class="nav color-dark-gray navigation_nav hidden" popover>
+            <a href="#sm">Mon stage &agrave; Square Management</a>
+            <a href="#ca">Mon stage au Cr&eacute;dit Agricole</a>
         </nav>
-        <br /><hr /><br />
+        
         <section class="_project" id="sm">
             <h2>Mon stage &agrave; Square Management</h2>
             <div class="align-row space-around-center justify">
@@ -89,7 +100,6 @@
             </div>
             
         </section>
-        <br /><hr /><br />
         <section class="_project" id="ca">
             <h2>Mon stage au Cr&eacute;dit Agricole Technologies et Services</h2>
             <div class="align-row space-around-center justify">
