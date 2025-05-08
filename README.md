@@ -10,5 +10,5 @@ Etant en 2ème année à l'EPSI et préparant un BTS SIO, je suis à la recherch
 Ce projet est le repository de mon portfolio, où je présente mon parcours, et quelques uns de mes projets actuels. Vous pouvez également retrouver mes coordonnées, puis me contacter pour quelconque raison professionnelle seulement.
 
 ##🔗Liens
-(Mon GitHub)[https://github.com/JeromeHtz]
-(Mon Portfolio)[https://jeromehtz.github.io]
+[Mon GitHub](https://github.com/JeromeHtz)
+[Mon Portfolio](https://jeromehtz.github.io)
