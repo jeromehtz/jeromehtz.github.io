@@ -18,7 +18,7 @@ h2{font-size:2rem}
 h1{font-size:3rem}
 h1,h2,h3,h4,h5,h6,a{font-weight:bold}
 main p{line-height:1.6}
-.footer{position:fixed;bottom:0;left:0;display:flex;align-items:center;flex-direction:column;width:100%;z-index:1000;padding:15px;background:#151515;color:#E0E0E0;opacity:0}
+.footer{position:fixed;bottom:0;left:0;display:flex;align-items:center;flex-direction:column;width:100%;z-index:1000;padding:15px;background:#151515;color:#E0E0E0;}
 .footer.visible{opacity:1}
 img,img .formation,main img{width:3rem}
 .hidden{display:none}
@@ -35,5 +35,4 @@ img,img .formation,main img{width:3rem}
 .display-flex{display:flex}
 .color-dark-gray{color:black}
 .stage{font-size:1.5rem}
-iframe{all: inherit;}
 @media (max-width:768px){.align-row{display:flex;flex-direction:column;justify-content:center}.justify{text-align:start}.align-column{display:flex;flex-direction:column}footer{position:relative}.space-around-center{display:flex;justify-content:space-around;align-items:flex-start}.absolute{text-align:center}nav{display:flex;justify-content:center;font-size:0.1rem}}
