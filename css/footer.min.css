@@ -20,19 +20,3 @@ h1,h2,h3,h4,h5,h6,a{font-weight:bold}
 main p{line-height:1.6}
 .footer{position:fixed;bottom:0;left:0;display:flex;align-items:center;flex-direction:column;width:100%;z-index:1000;padding:15px;background:#151515;color:#E0E0E0;}
 .footer.visible{opacity:1}
-img,img .formation,main img{width:3rem}
-.hidden{display:none}
-.align-row{display:flex}
-.align-column{display:flex;flex-direction:column}
-.space-around-center{display:flex;justify-content:space-between}
-.justify{text-align:justify}
-.marge-gauche{margin-left:50px;max-width:800px}
-.about-school-fontsize{font-size:2rem}
-.projects{display:flex;flex-wrap:wrap;flex-direction:column}
-._project{display:flex;flex-wrap:wrap;flex-direction:column;margin-top:10px;justify-content:flex-start;margin:10px 0}
-.center{display:flex;justify-content:center}
-[popover]{top:0;width:100%;z-index:1000;padding:10px 20px;background:#151515;border:none}
-.display-flex{display:flex}
-.color-dark-gray{color:black}
-.stage{font-size:1.5rem}
-@media (max-width:768px){.align-row{display:flex;flex-direction:column;justify-content:center}.justify{text-align:start}.align-column{display:flex;flex-direction:column}footer{position:relative}.space-around-center{display:flex;justify-content:space-around;align-items:flex-start}.absolute{text-align:center}nav{display:flex;justify-content:center;font-size:0.1rem}}
