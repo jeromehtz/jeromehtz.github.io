@@ -16,16 +16,29 @@
 </head>
 <body class="align-column content">
     <div class="position-fixed">
-        <header class="header">
+        <header class="header align-row">
 
             <div class="display-flex">
-                <div id="menu">
-                    <img class="menu" id="menu" src="images/menu.png" alt="Menu"/>
-
-                </div>
-                <div id="navigation">
-                    <img class="navigation" id="navigation" src="images/nav.png" alt="Navigation"/>
-                </div>
+                <nav class="nav">
+                    <span data-bs-toggle="popover" data-bs-content="Retour à la page d'accueil">
+                        <a href="index.html">Page d'accueil</a>
+                    </span>
+                        <span data-bs-toggle="popover" data-bs-content="En savoir plus sur moi">
+                        <a href="about.html">Dipl&ocirc;mes et formations</a>
+                    </span>
+                        <span data-bs-toggle="popover" data-bs-content="Voir mes projets">
+                        <a href="projects.html">Projets</a>
+                    </span>
+                        <span data-bs-toggle="popover" data-bs-content="Voir mes projets">
+                        <a href="stages.html">Exp&eacute;riences en entreprises</a>
+                    </span>
+                        <span data-bs-toggle="popover" data-bs-content="Contact">
+                        <a href="index.html">Contact</a>
+                    </span>
+                        <span data-bs-toggle="popover" data-bs-content="Contact">
+                        <a href="flux_rss.html">Actualités</a>
+                    </span>
+                </nav>
             </div>
             <div>
                 <nav id="contact">
@@ -49,26 +62,7 @@
     
         </header>
     </div>
-    <nav class="nav hidden" popover>
-        <span data-bs-toggle="popover" data-bs-content="Retour à la page d'accueil">
-            <a href="index.html">Page d'accueil</a>
-        </span>
-            <span data-bs-toggle="popover" data-bs-content="En savoir plus sur moi">
-            <a href="about.html">Dipl&ocirc;mes et formations</a>
-        </span>
-            <span data-bs-toggle="popover" data-bs-content="Voir mes projets">
-            <a href="projects.html">Projets</a>
-        </span>
-            <span data-bs-toggle="popover" data-bs-content="Voir mes projets">
-            <a href="stages.html">Exp&eacute;riences en entreprises</a>
-        </span>
-            <span data-bs-toggle="popover" data-bs-content="Contact">
-            <a href="index.html">Contact</a>
-        </span>
-            <span data-bs-toggle="popover" data-bs-content="Contact">
-            <a href="flux_rss.html">Actualités</a>
-        </span>
-    </nav>
+    
     <main class="container projects">
 
         
