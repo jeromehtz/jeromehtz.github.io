@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Portfolio BTS SIO - Jérôme Hertzog">
     <meta property="og:description" content="Découvrez mon parcours et mes projets en développement informatique.">
-    <meta property="og:image" content="https://jeromehtz.github.io/images/portfolio.jpg">
+    <meta property="og:image" content="https://jeromehtz.github.io/images/arriereplan.png">
     <meta property="og:url" content="https://jeromehtz.github.io/projects.html">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Jérôme Hertzog - Mes projets</title>
     <link rel="icon" type="image/png" href="images/briefcase_14255519.png">
+    <script src="script/mobile-nav.js" defer></script>
+    <script src="script/theme.js" defer></script>
 </head>
 <body class="align-column content">
-    <div class="position-fixed">
+    <div class="site-header">
         <header class="header align-row">
-
+            <a class="site-brand" href="index.html" aria-label="Jérôme Hertzog, accueil"><span>JH</span> Jérôme Hertzog</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+                <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="menu-toggle-label">Menu</span>
+            </button>
             <div class="display-flex">
-                <nav class="nav">
+                <nav class="nav" id="site-navigation" aria-label="Navigation principale">
                     <span data-bs-toggle="popover" data-bs-content="Retour à la page d'accueil">
                         <a href="index.html">Page d'accueil</a>
                     </span>
@@ -33,14 +39,14 @@
                         <a href="stages.html">Exp&eacute;riences en entreprises</a>
                     </span>
                         <span data-bs-toggle="popover" data-bs-content="Contact">
-                        <a href="index.html">Contact</a>
+                        <a href="index.html#contact">Contact</a>
                     </span>
                         <span data-bs-toggle="popover" data-bs-content="Contact">
                         <a href="flux_rss.html">Actualités</a>
                     </span>
                 </nav>
             </div>
-            <div>
+            <div class="header-social">
                 <nav id="contact">
                     <a href="flux_rss.html" alt="Flux RSS">
                         <img src="images/fluxrss.png" alt="Mon CV"/>
@@ -59,19 +65,46 @@
                     </a>
                 </nav>
             </div>
+            <button class="theme-toggle" type="button" aria-label="Activer le mode nocturne" aria-pressed="false">
+                <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+                <span class="theme-toggle-label">Mode nocturne</span>
+            </button>
     
         </header>
     </div>
     
     <main class="container projects">
 
+        <header class="page-heading">
+            <p class="page-kicker">Sélection de réalisations</p>
+            <h1>Mes projets</h1>
+            <p>Des projets académiques et personnels pour explorer le développement, l’algorithmique et la création d’interfaces.</p>
+        </header>
+
         <nav class="nav color-dark-gray navigation_nav hidden" popover>
+            <a href="#observatoire-rail">Observatoire Rail Europe</a>
             <a href="#pokemon">Combats de Pokémon avec Python</a>
             <a href="#afit">AFIT avec OCaml</a>
             <a href="#project">Pokédex Pokémon avec vuejs</a>
         </nav>
 
-        
+        <section class="_project" id="observatoire-rail">
+            <h2><span class="project-mark" aria-hidden="true">RAIL</span> MSPR — Observatoire Rail Europe</h2>
+            <div class="justify">
+                <p>
+                    Réalisée dans le cadre d’une MSPR en équipe, cette plateforme de données vise à centraliser et analyser les trajets ferroviaires transfrontaliers en Europe. Elle couvre six pays et des données de 2016 à 2024 pour comparer les itinéraires, la fréquentation et les émissions de CO₂, et faciliter l’analyse de la mobilité ferroviaire.
+                </p>
+                <p>
+                    Le projet s’appuie sur une API et un tableau de bord pour explorer les données et leur complétude. L’environnement technique comprend Python, FastAPI, Streamlit, PostgreSQL et Docker. Plusieurs pistes d’intelligence artificielle sont étudiées, notamment l’estimation des émissions manquantes, la recommandation d’itinéraires et la détection d’anomalies.
+                </p>
+                <div class="stage-skills">
+                    <p>Ouverture envisagée</p>
+                    <p>Adapter une partie de la solution pour l’intégrer à Microsoft Dynamics 365 Business Central.</p>
+                </div>
+            </div>
+            <a href="https://github.com/jeromehtz/MsprDS" target="_blank" rel="noopener">Voir le projet</a>
+        </section>
+
         <section class="_project" id="pokemon">
             <h2><img style="width: 3rem;"src="images/python.png" alt="Logo Python" /> Python et Pokémon</h2>
             <div class="justify">
@@ -94,7 +127,6 @@
             </div>
             <a href="https://github.com/jeromehtz/mes_projets/tree/main/Python/EPSI/jeu_pokemon" target="_blank">Voir le projet</a>
         </section>
-        <br /><hr /><br />
         <section class="_project" id="afit">
             <h2><img style="width: 6rem;"src="images/maths.jpg" alt="Logo Python" /> AFIT (Arithmetic for IT)</h2>
             <!-- Il s'adapte au texte-->
@@ -124,7 +156,6 @@
             
             <a href="https://github.com/jeromehtz/mes_projets/tree/main/Autres%20langages/EPITA/OCaml/AFIT" target="_blank">Voir le projet</a>
         </section>
-        <br /><hr /><br />
         <section class="_project" id="project">
             <h2><img style="width: 3rem;"src="images/pokemon.jpg" alt="Logo Python" /> Pokédex</h2>
             <div class="justify">
@@ -142,10 +173,8 @@
             
             <a href="https://github.com/jeromehtz/mes_projets/tree/main/Projets%20web/pokedex-proj" target="_blank">Voir le projet</a>
         </section>
-        <br /><hr /><br />
         <!-- Ajoutez d'autres projets ici -->
     </main>
 </body>
-<iframe src="footer.html" width="100%" height="500px" style="border: none;"></iframe>
-<script src="script/scriptjs.min.js"></script>
+<iframe src="footer.html" title="Pied de page et coordonnées"></iframe>
 </html>
